@@ -1,3 +1,4 @@
+from .apigateway import *
 from .appmesh import *
 from .athena import *
 from .autoscaling import *
