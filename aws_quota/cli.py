@@ -44,7 +44,7 @@ def set_quota_limit_override(quotaName: str, limitValue: int):
             check.quota_limit_override = limitValue
             return
 
-    logger.warn('Override for check "%s" provided, but no check was found by that name', quotaName)
+    logger.warning('Override for check "%s" provided, but no check was found by that name', quotaName)
 
 def set_quota_limit_overrides(limitOverrides: typing.Dict[str, int]):
     for quotaName, limitValue in limitOverrides.items():

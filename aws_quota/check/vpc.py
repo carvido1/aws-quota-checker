@@ -126,7 +126,7 @@ class NetworkInterfaceCountCheck(QuotaCheck):
     scope = QuotaScope.REGION
     service_code = 'vpc'
     quota_code = 'L-DF5E4CA3'
-    description = "The maximum number of network interfaces per Region."
+    description = "The maximum number of network interfaces per Availability Zone in a Region."
 
     @property
     def current(self):
