@@ -6,7 +6,7 @@ class RDSDBClusterCountCheck(QuotaCheck):
     service_code = "rds"
     scope = QuotaScope.REGION
     quota_code = "L-952B80B8"
-    description = "The maximum number of DB clusters allowed in this account in the current Region"
+    description = "The maximum number of Aurora clusters allowed in this account in the current Region"
 
     @property
     def current(self) -> int:
